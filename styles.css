@@ -1,0 +1,204 @@
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  
+  width: 100vw;
+  margin-top: -7rem;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  padding: 1rem 1rem;
+  
+  z-index: 1000;
+  background-color: transparent !important;
+  transition: background-color 0.4s ease, box-shadow 0.4s ease, backdrop-filter 0.4s ease;
+}
+
+.navbar a {
+  margin-left: 1.5rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: rgba(207, 207, 207, 0.8);
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #f0f0f0;
+}
+
+.navbar.scrolled {
+  background-color: rgba(255, 255, 255, 0.8) !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(6px);
+}
+
+.navbar.scrolled a {
+  color: rgb(46, 46, 46, 0.8);
+}
+
+.navbar.scrolled a:hover {
+  color: black;
+}
+
+.masthead {
+  position: relative;
+
+  width: 100vw; 
+  height: 100vh;
+  min-height: 35rem;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("img/background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+  text-align: center;
+}
+
+.masthead h1 {
+  margin-bottom: 0;
+  border: none;
+  text-decoration: none;
+}
+
+.circular_image {
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.circular_image img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: none;
+  object-fit: cover;
+  border: 2px solid white;
+  display: block;
+}
+
+#ander {
+  scroll-margin-top: 80px;
+}
+
+.about {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  background-color: #000;
+  color: white;
+  padding: 5em;
+}
+
+.about h2 {
+  text-decoration: none;
+  color: #fff;
+}
+
+.about p {
+  color: rgba(255,255,255,0.8);
+  line-height: 1.6;
+}
+
+.contact-section {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  padding: 0rem 0;
+}
+
+.contact-section .social {
+  gap: 0.5rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.contact-section .social a {
+  height: 3rem;
+  width: 3rem;
+  line-height: 2.7rem;
+  
+  font-size: 1.5rem;  
+  border-radius: 100%;
+  
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.3);
+  text-align: center;
+}
+
+.contact-section .social a:hover {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.contact-section .social i {
+  vertical-align: middle;  
+}
+
+.text-white {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+}
+
+.text-white-50 {
+  --bs-text-opacity: 1;
+  color: rgba(255, 255, 255, 0.5) !important;
+  padding: 3rem;
+}
+
+.footer {
+  width: 100vw;
+  min-height: 40px;
+  margin-left: calc(50% - 50vw); 
+  margin-right: calc(50% - 50vw);
+  padding: 0.3rem 0;
+  
+  letter-spacing: 0.5px;
+  font-size: 0.9rem;
+  color: white;
+  background-color: #000;
+  
+  display: flex; 
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer p {
+  margin: 0;
+  display: inline-block;
+}
+
+.footer a {
+  color: #68acffff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #1a7ffaff;
+}
+
