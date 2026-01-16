@@ -8,7 +8,7 @@
     <a href="#about">About</a>
     <a href="#career">Career</a>
     <a href="#publications">Publications</a>
-    <a href="files/full_cvn_20251014.pdf">CV</a>
+    <a href="files/full_cvn_20260116.pdf">CV</a>
   </div>
 </nav>
 
